@@ -1,4 +1,10 @@
-[![Build Status](https://travis-ci.org/rmurphey/js-assessment.svg?branch=master)](https://travis-ci.org/rmurphey/js-assessment)
+# My Results From rmurphey/js_assessment
+## see code in /app/*
+## where I needed to look things up
+  - details of XMLHttpRequest for Promise
+  - regex for a couple of tricky ones
+  - algorithms for permutations and parentheses (I had knew the basic structure but not the details)
+
 
 # A test-driven JS assessment
 
