@@ -1,29 +1,13 @@
 module.exports = {
     "env": {
-        "browser": true
+        "browser": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6
     },
     "globals": {
-      "arraysAnswers": false,
-      "asyncAnswers": false,
-      "bestPracticesAnswers": false,
-      "countAnswers": false,
-      "flowControlAnswers": false,
-      "functionsAnswers": false,
-      "logicalOperatorsAnswers": false,
-      "modulesAnswers": false,
-      "numbersAnswers": false,
-      "objectsAnswers": false,
-      "recursionAnswers": false,
-      "regexAnswers": false,
-      "stringsAnswers": false,
-
-      "it": false,
-      "require": false,
-      "describe": false,
-      "beforeEach": false,
-      "afterEach": false,
-      "before": false,
-      "after": false
+      "exports": true,
     },
     "extends": "eslint:recommended",
     "rules": {
@@ -78,7 +62,7 @@ module.exports = {
         "keyword-spacing": "error",
         "linebreak-style": [
             "error",
-            "unix"
+            process.env.NODE_ENV === 'prod' ? "unix" : "windows"
         ],
         "lines-around-comment": "error",
         "max-depth": "error",
@@ -98,7 +82,7 @@ module.exports = {
         "no-div-regex": "error",
         "no-duplicate-imports": "error",
         "no-else-return": "error",
-        "no-empty-function": "error",
+        "no-empty-function": "off",
         "no-eq-null": "error",
         "no-eval": "error",
         "no-extend-native": "error",
@@ -149,14 +133,14 @@ module.exports = {
         "no-shadow-restricted-names": "error",
         "no-spaced-func": "error",
         "no-sync": "error",
-        "no-ternary": "error",
         "no-throw-literal": "error",
         "no-trailing-spaces": "error",
-        "no-undef-init": "error",
-        "no-undefined": "error",
+        "no-undef-init": "off",
+        "no-undefined": "off",
         "no-underscore-dangle": "error",
         "no-unmodified-loop-condition": "error",
         "no-unneeded-ternary": "error",
+        "no-unused-vars": "off",
         "no-use-before-define": "error",
         "no-useless-call": "error",
         "no-useless-concat": "error",

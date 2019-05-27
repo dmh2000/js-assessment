@@ -3,8 +3,11 @@ module.exports = {
         "browser": true,
         "node": true
     },
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
     "globals": {
-      "exports": false,
+      "exports": true,
     },
     "extends": "eslint:recommended",
     "rules": {
@@ -59,7 +62,7 @@ module.exports = {
         "keyword-spacing": "error",
         "linebreak-style": [
             "error",
-            "unix"
+            process.env.NODE_ENV === 'prod' ? "unix" : "windows"
         ],
         "lines-around-comment": "error",
         "max-depth": "error",

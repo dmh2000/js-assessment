@@ -28,7 +28,7 @@ describe('counter', function () {
     console.log = function (val) {
       nums.push(val);
     };
-
+    
     this.clock = sinon.useFakeTimers();
   });
 
