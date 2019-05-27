@@ -1,4 +1,5 @@
 # My Results From rmurphey/js_assessment
+## update from my previous attempt. more ES6 usage than before
 ## see code in /app/*
 ## where I needed to look things up
   - details of XMLHttpRequest for Promise
